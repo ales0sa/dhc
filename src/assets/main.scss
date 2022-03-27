@@ -1,0 +1,32 @@
+@import 'primeflex/primeflex.scss';
+
+// tr fist child
+tr:first-child {
+    text-align: left;
+
+}
+
+tr:last-child {
+
+    text-align: right;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input {
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+}
