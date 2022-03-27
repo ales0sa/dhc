@@ -11,15 +11,15 @@
 
         <div class="flex justify-content-center" >
 
-<div>
+<div class="field">
 
         <input type="text" placeholder="Project name"/>
 </div>
-<div>
+<div class="field">
 
         <input type="text" placeholder="Price Per Hour"/>
 </div>
-<div>
+<div class="field">
 
         <input type="text" placeholder="Description"/>
 </div>

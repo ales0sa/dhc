@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import NewProject from '../views/NewProject.vue'
 import Project from '../views/Project.vue'
+import Export from '../views/Export.vue'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,11 @@ const routes = [
     path: '/new-project',
     name: 'NewProject',
     component: NewProject
+  },
+  {
+    path: '/export',
+    name: 'Export',
+    component: Export
   },
   {
     path: '/p:id',

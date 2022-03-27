@@ -18,8 +18,9 @@ a {
 }
 
 input {
-    border: none;
-    border-radius: 0;
+    margin: 8px;
+    padding: 3px;
+    border-radius: 20px;
     outline: none;
     background-color: #fff;
     color: #000;
@@ -29,4 +30,18 @@ input {
     padding: 0.5em;
     width: 100%;
     box-sizing: border-box;
+    border: 1px solid #000;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    
+}
+
+.field {
+    margin: 8px;
+    padding: 3px;
+    
+    
 }

@@ -12,8 +12,9 @@
       </div>
       <div class="project-body">
 
-        Worked Hours:  {{  secsParsed(workedHours(project)) }}
+        Worked Time:  {{  secsParsed(workedHours(project)) }}
         Pending Payments: $ {{  formatMoney(pendingPayments(project)) }}
+        Earned: $ {{  formatMoney(earned(project)) }}
 
       </div>
     </router-link>
@@ -94,6 +95,15 @@ secsParsed: function (sec) {
         console.log(e);
       }
     },
+    earned(project) {
+      let earned = 0;
+      if (project.payments) {
+        earned = project.payments.reduce((acc, payment) => {
+          return acc + payment.amount;
+        }, 0);
+      }
+      return earned;
+    },
     pendingPayments(project) {
       let payments = 0;
       if(project && project.pauses) {
@@ -157,10 +167,10 @@ secsParsed: function (sec) {
 .project {
   margin: 20px;
   padding: 20px;
-  border: 1px solid #3d40c4;
+  border: 1px solid #4289b9;
   border-radius: 25px;
-  background-color: #3d3fc441;
-
+  background-color: #4289b963;
+  box-shadow: 0 0 3px #3d3fc4;
   &-active {
     background-color: #7070a76b;
 

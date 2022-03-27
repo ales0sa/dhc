@@ -2,7 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Projects</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/new-project">New Project</router-link> |
+      <router-link to="/settings">Settings</router-link> | 
+      <router-link to="/export">Export</router-link> |
+      <router-link to="/about">About</router-link>  
       <!-- | <span @click="toggleDevTools = true" v-if="!devTools"> Turn <b>ON</b> DevTools </span>
       <span @click="toggleDevTools = false" v-if="devTools"> Turn <b>OFF</b> DevTools </span> -->
     </div>
